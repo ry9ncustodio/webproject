@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+.hide {
+	display: none
+}
+a {
+	text-decoration: none;
+}
+body {
+	font-family: 'Comic Neue', cursive;
+	margin:0 auto;
+	width: 960px;
+}
+nav ul {
+	list-style: none;
+	padding: 0;
+}
+
+nav li {
+	display:inline;
+	float:left;
+}
+
+nav a:link, nav a:visited {
+	background-color: black;
+	color: white;
+	display: block;
+	width: 240px;
+	text-align: center;
+	padding: 10px 0;
+}
+
+nav a:hover {
+	background-color: dimgray;
+}
+
+header {
+	margin-bottom: 70px;
+}

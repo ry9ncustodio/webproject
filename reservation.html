@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Reservation</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+<style>
+	fieldset {
+		padding: 10px;
+		line-height: 2.1;
+	}
+</style>
+
+</head>
+<body>
+	<header>
+		<h1>Apple Devices</h1>
+		<nav>
+			<ul>
+				<li><a href="iphone.html">iPhone</a></li>
+				<li><a href="ipad.html">iPad</a></li>
+				<li><a href="mac.html">Mac</a></li>
+				<li><a href="reservation.html">Reservation</a></li>
+			</ul>
+		</nav>
+	</header>
+	<h1>Reservation</h1>
+	<fieldset>
+		<legend>Personal Information</legend>
+		Full Name: <input type="text" name="fullname" size="30" maxlength="30" autofocus placeholder="e.g. Juan Tagalog"><br>
+		Contact Number: <input type="text" name="contact" size="30" maxlength="11" placeholder="e.g. 09xx-xxx-xxxx">
+	</fieldset>
+	<fieldset>
+		<legend>Apple Devices</legend>
+		Select: <select id="AppleDevices">
+		<option value="iPhone SE 2">iPhone SE 2</option>
+		<option value="iPhone XR">iPhone XR</option>
+		<option value="iPhone XSs">iPhone XS</option>
+		<option value="iPhone XS Max">iPhone XS Max</option>
+		<option value="iPhone 11">iPhone 11</option>
+		<option value="iPhone 11 Pro">iPhone 11 Pro</option>
+		<option value="iPhone 11 Pro Max">iPhone 11 Pro Max</option>
+		</select>
+		Select: <p id="capacity"></p>
+	</fieldset>
+<script src="main.js"></script>
+
+<script>
+var e = document.getElementById("AppleDevices");
+var strUser = e.options[e.selectedIndex].value;
+document.getElementById("capacity").innerHTML = strUser;
+
+
+</script>
+</body>
+</html>
