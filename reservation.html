@@ -33,17 +33,25 @@
 	</fieldset>
 	<fieldset>
 		<legend>Apple Devices</legend>
-		Select: <select id="AppleDevices" onchange="refresh()">
-		<option value="1">-select-</option>
-		<option value="2">iPhone SE 2</option>
-		<option value="3">iPhone XR</option>
-		<option value="4">iPhone XS</option>
-		<option value="5">iPhone XS Max</option>
-		<option value="6">iPhone 11</option>
-		<option value="7">iPhone 11 Pro</option>
-		<option value="8">iPhone 11 Pro Max</option>
-		</select>
-		Select: <select id="capacitylist">
+		iPhones: <select id="iphones">
+		<option value="0">none</option>
+		<option value="1">iPhone SE 2</option>
+		<option value="2">iPhone XR</option>
+		<option value="3">iPhone XS</option>
+		<option value="4">iPhone XS Max</option>
+		<option value="5">iPhone 11</option>
+		<option value="6">iPhone 11 Pro</option>
+		<option value="7">iPhone 11 Pro Max</option>
+	</select> <br>
+		Mac: <select id="mac">
+			<option value="1">Macbook Air</option>
+			<option value="2">Macbook Pro 13</option>
+			<option value="3">Macbook Pro 15</option>
+			<option value="4">iMac 21.5</option>
+			<option value="5">iMac 27</option>
+			<option value="6">iMac Pro</option>
+			<option value="7">Mac Mini</option>
+			<option value="8">Mac Pro</option>
 		</Select>
 	</fieldset>
 
@@ -56,14 +64,13 @@ function refresh() {
 	var storage2 = ["64GB","256GB","512GB"];
 	var x = document.getElementById("AppleDevices").value;
 	var sel = document.getElementById('capacitylist');
+
 	for(var i = 0; i < storage.length; i++) {
 		    var opt = document.createElement('option');
 		    opt.innerHTML = storage[i];
 		    opt.value = storage[i];
 		    sel.appendChild(opt);
 	}
-
-
 }
 </script>
 </body>
